@@ -1,0 +1,13 @@
+@import 'import';
+@import 'root';
+html,
+body,
+:global(#root) {
+  height: 100%;
+  background: transparent;
+}
+body {
+  padding: 0.5rem;
+  color: $c-white;
+  user-select: none;
+}

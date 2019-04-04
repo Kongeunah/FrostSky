@@ -1,0 +1,46 @@
+// color
+$c-white: rgba(#fff, 0.8);
+$c-grey: rgba(#fff, 0.33);
+$c-yellow: #bca98a;
+$c-red: #d86f87;
+$c-green: #649029;
+$c-blue: #4488fc;
+$c-purple: #bb84ff;
+$c-red-light: #e881b5;
+$c-yellow-light: #eee1c5;
+$c-green-light: #b3ffbe;
+$c-blue-light: #57c0e5;
+
+$c-icon: #891921;
+
+$c-bg: #1e1e1e;
+$c-bg-highlight: #3a3a3a;
+$c-bg-dark: rgba(#000, 0.4);
+$c-bg-light: rgba(#fff, 0.1);
+$c-bg-input: rgba(#fff, 0.07);
+
+$c-split: rgba(#fff, 0.1);
+
+$c-border: #554121;
+$c-border-highlight: #cfc36e;
+
+$c-high: lighten(#ffdf30, 5%);
+$c-high-dark: #e2a806;
+$c-low: lighten(#ee80ed, 15%);
+$c-low-dark: #6e309c;
+
+// media-point
+$m-extra: '>520px';
+$m-large: '<=520px';
+$m-middle: '<=300px';
+$m-smiddle: '<=260px';
+$m-small: '<=240px';
+$m-exsmall: '<=200px';
+$m-tiny: '<=180px';
+$anim-showup: showup 0.8s forwards ease-out;
+
+// btn
+$btn-highlight: lighten($c-bg-highlight, 5%);
+$btn: lighten($c-bg, 5%);
+$btn-hover-highlight: lighten($c-bg-highlight, 10%);
+$btn-hover: lighten($c-bg, 10%);

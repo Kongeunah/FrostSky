@@ -1,0 +1,163 @@
+@import 'import';
+.view {
+  height: 100%;
+  background: $c-bg;
+}
+.bar {
+  color: $c-yellow;
+}
+.flex {
+  display: flex;
+  flex: 1;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-right: 1px solid rgba($c-border-highlight, 0.3);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.body {
+  flex: 1;
+  font-size: 0.8rem;
+}
+.title {
+  margin-bottom: 0.6rem;
+}
+.item {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 0 0.4rem !important;
+  color: $c-yellow-light;
+}
+
+.btngroup {
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+.foot {
+  font-size: 0.7rem;
+  color: $c-yellow;
+}
+.editor {
+  padding: 1rem;
+}
+
+.list {
+  margin-bottom: 1rem;
+}
+.logo {
+  padding: 1rem;
+}
+.qtGroup {
+  margin-bottom: 2rem;
+}
+.qtList {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  input {
+    width: 3rem;
+    margin: 0 0.5rem;
+  }
+}
+.qtRight {
+  margin: 0 1rem;
+  i::before {
+    color: $c-grey;
+  }
+}
+
+.smile i::before {
+  color: $c-high;
+  text-shadow: 0 0 2px $c-high-dark;
+  font-size: 1.1rem;
+}
+.frown i::before {
+  color: $c-low;
+  text-shadow: 0 0 2px $c-low-dark;
+  font-size: 1.1rem;
+}
+.arrow-up i::before {
+  color: $c-red-light;
+  text-shadow: 0 0 2px $c-red;
+  font-size: 1.1rem;
+}
+
+.arrow-down i::before {
+  color: $c-green-light;
+  text-shadow: 0 0 2px $c-green;
+  font-size: 1.1rem;
+}
+:global {
+  .ant-checkbox-inner {
+    background: linear-gradient(to bottom, #373232 0, #6a6662 100%);
+    border: 1px solid #7c776d;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.6),
+      inset -1px -1px 1px rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.7);
+    &:after {
+      content: ' ';
+      border: none !important;
+      width: 10px;
+      height: 10px;
+      left: 1px;
+      top: 1px;
+      transform: none !important;
+      background: linear-gradient(to bottom, #f7c35a 0, #ffbe31 100%);
+      box-shadow: inset 0 0 2px 1px #ffeb7b, 0 0 3px 2px rgba(255, 190, 49, 0.6);
+      opacity: 0;
+    }
+  }
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.listItem,
+.listLang {
+  display: flex;
+  align-items: center;
+}
+
+.listTitle,
+.listLangTitle {
+  font-size: 0.9rem;
+  width: 10.8rem;
+  color: $c-yellow-light;
+  line-height: 1;
+}
+
+.listItem {
+  height: 1.6rem;
+  padding: 0;
+  margin: 0 0 0.2rem !important;
+  > span {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.listTitle {
+  width: 11.2rem;
+}
+.listInput {
+  flex: 1;
+}
